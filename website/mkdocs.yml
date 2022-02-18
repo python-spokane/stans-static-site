@@ -1,0 +1,10 @@
+site_name: Stan's Static Site
+site_description: A static website about Stan the Snakes's adventures created using Python's MkDocs.
+site_author: Stan the Snake
+repo_url: https://github.com/python-spokane/stans-static-site
+
+nav:
+  - Home: 'index.md'
+
+theme:
+  name: material
