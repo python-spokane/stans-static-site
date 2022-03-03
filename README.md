@@ -42,5 +42,5 @@ mkdocs build
 ```
 
 ## AWS S3 Hosting
-- [S3 Example Static Web Host](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3-example-static-web-host.html)
-- [Boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
+- Use the following user guide to setup a simple s3 bucket to host a static website
+  - [Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
