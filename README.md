@@ -44,3 +44,6 @@ mkdocs build
 ## AWS S3 Hosting
 - Use the following user guide to setup a simple s3 bucket to host a static website
   - [Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
+- Setup AWS IAM User
+  - As a best practice create an AWS IAM User and allow only it to write to the s3 bucket for deploying the site
+  - Create a secret to store the AWS access keys for use in deploying the site via [Actions](https://github.com/python-spokane/stans-static-site/actions)
