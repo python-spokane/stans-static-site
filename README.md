@@ -57,4 +57,4 @@ mkdocs build
 - Or *even better* [configure OIDC in AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html) and use [GitHub's OIDC provider to assume a role](https://github.com/aws-actions/configure-aws-credentials#assuming-a-role) for deploying the site
   - [Create a role for federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp_oidc.html)
   - [Create a trust policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-console.html)
-  - Create an IAM role and associate the trust policy created in the previous step
+  - Create a Web Identity IAM role and associate the trust policy created in the previous step
