@@ -3,8 +3,14 @@ A static website about Stan the Snakes's adventures created using Python's MkDoc
 
 ## TODO
 - [x] Add MkDocs site
-- [ ] Add info about Stan's latest adventures
-- [ ] Add info about how to host on AWS, Azure, ...
+- [ ] Write blog posts for
+  - [ ] Adventure at Amazon
+  - [ ] Adventure at Microsoft
+- [ ] Add hosting info about 
+  - [ ] AWS
+  - [ ] Azure
+  - [ ] GitHub Pages
+- [ ] AWS diagram
 
 ## Getting Started
 
