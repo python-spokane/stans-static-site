@@ -11,6 +11,7 @@ A static website about Stan the Snakes's adventures created using Python's MkDoc
   - [ ] Azure
   - [ ] GitHub Pages
 - [ ] AWS diagram
+- [ ] Add other ways to deploy to AWS links
 
 ## Getting Started
 
