@@ -5,6 +5,30 @@ repo_url: https://github.com/python-spokane/stans-static-site
 
 nav:
   - Home: 'index.md'
+  - Adventures:
+    - Microsoft: 'adventures/microsoft.md'
+
+markdown_extensions:
+  - attr_list
+  - meta
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 theme:
   name: material
+  icon:
+    logo: material/snake
+  favicon: img/favicon.svg
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tracking
+
+extra_css:
+  - stylesheets/extra.css

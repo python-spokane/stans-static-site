@@ -1,0 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
+article img, article iframe {
+    border-radius: 4px;
+}
