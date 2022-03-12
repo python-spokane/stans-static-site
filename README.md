@@ -62,4 +62,4 @@ mkdocs build
   - Use the [AWS Policy Generator](https://awspolicygen.s3.amazonaws.com/policygen.html) to quickly create a secure policy
 ### Troubleshooting
 - [Access denied error when using s3 static website](https://aws.amazon.com/premiumsupport/knowledge-center/s3-static-website-endpoint-error/)
-#### For more indepth Python + AWS see [Python on AWS](https://aws.amazon.com/developer/language/python/) *Stan approved*
+#### For more indepth Python + AWS see [Python on AWS](https://aws.amazon.com/developer/language/python/) - *Stan approved*
