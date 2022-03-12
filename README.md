@@ -58,4 +58,5 @@ mkdocs build
   - [Create a role for federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp_oidc.html)
   - [Create a trust policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-console.html)
   - Create a Web Identity IAM role and associate the trust policy created in the previous step
-- Grant the role or user created above permissions on the s3 bucket
+- Grant the role or user created above permissions on the s3 bucket via a bucket policy (you really only want public *read* access)
+  - Use the [AWS Policy Generator](https://awspolicygen.s3.amazonaws.com/policygen.html) to quickly create a secure policy
