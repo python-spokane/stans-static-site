@@ -58,4 +58,4 @@ jobs:
 
     - name: Copy files to the production website with the AWS CLI s3 sync command
       run: |
-        aws s3 sync ./website/site s3://aws-python-example
+        aws s3 sync ./website/site s3://amazon.stansadventures.com
