@@ -48,6 +48,45 @@ cd website
 mkdocs build
 ```
 
+## Azure
+
+Azure blob storage static website
+```powershell
+# create resource group
+az group create --name spug --location westus2
+
+# create storage account
+az storage account create --name stansstaticstorage --resource-group spug --location westus2 --sku Standard_RAGRS --kind StorageV2
+
+# list storage account keys
+az storage account keys list --resource-group spug --account-name stansstaticstorage
+
+# set "--auth-mode key" key
+$Env:AZURE_STORAGE_KEY = "<account_storage_key>"
+
+# configure storage account to use a static website
+az storage blob service-properties update --account-name stansstaticstorage --static-website --404-document 404.html --index-document index.html
+
+# upload static site files
+az storage blob upload-batch -s .\website\site\ -d '$web' --account-name stansstaticstorage
+
+# query website URL
+az storage account show -n stansstaticstorage -g spug --query "primaryEndpoints.web" --output tsv
+
+# add CNAME to domain provider -- https://domains.google.com/
+# configure custom domain name
+az storage account update -g spug --name stansstaticstorage --custom-domain "blob.stansadventures.com" --use-subdomain false
+
+## other custom domain options include using Azure CDN
+```
+
+[https://blob.stansadventures.com/](https://blob.stansadventures.com/)
+
+Resource
+- [Host a static website on Blob Storage](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website-host)
+  - [Map a custom domain to an Azure Blob Storage endpoint](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?tabs=azure-cli#map-a-custom-domain-with-https-enabled)
+  - [Integrate a static website with Azure CDN](https://docs.microsoft.com/en-us/azure/storage/blobs/static-website-content-delivery-network)
+
 ## AWS S3 Hosting
 - Use the following user guide to setup a simple s3 bucket to host a static website
   - [Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
