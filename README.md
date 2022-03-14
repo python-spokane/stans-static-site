@@ -1,5 +1,21 @@
-# Stan's Static Site 
+# Stan's Static Site <!-- omit in toc -->
 A static website about Stan the Snakes's adventures created using Python's MkDocs
+
+- [TODO](#todo)
+- [Getting Started](#getting-started)
+  - [Create virtual environment](#create-virtual-environment)
+  - [Activate virtual environment](#activate-virtual-environment)
+  - [Install dependencies](#install-dependencies)
+  - [Debug site](#debug-site)
+  - [Build site](#build-site)
+- [Azure](#azure)
+  - [Azure blob storage static website](#azure-blob-storage-static-website)
+    - [Resources](#resources)
+  - [OIDC](#oidc)
+    - [Resources](#resources-1)
+- [AWS S3 Hosting](#aws-s3-hosting)
+  - [Troubleshooting](#troubleshooting)
+    - [For more indepth Python + AWS see Python on AWS - *Stan approved*](#for-more-indepth-python--aws-see-python-on-aws---stan-approved)
 
 ## TODO
 - [x] Add MkDocs site
@@ -50,7 +66,7 @@ mkdocs build
 
 ## Azure
 
-Azure blob storage static website
+### Azure blob storage static website
 ```powershell
 # create resource group
 az group create --name spug --location westus2
@@ -82,10 +98,20 @@ az storage account update -g spug --name stansstaticstorage --custom-domain "blo
 
 [https://blob.stansadventures.com/](https://blob.stansadventures.com/)
 
-Resource
+#### Resources
 - [Host a static website on Blob Storage](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website-host)
-  - [Map a custom domain to an Azure Blob Storage endpoint](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?tabs=azure-cli#map-a-custom-domain-with-https-enabled)
-  - [Integrate a static website with Azure CDN](https://docs.microsoft.com/en-us/azure/storage/blobs/static-website-content-delivery-network)
+- [Map a custom domain to an Azure Blob Storage endpoint](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?tabs=azure-cli#map-a-custom-domain-with-https-enabled)
+- [Integrate a static website with Azure CDN](https://docs.microsoft.com/en-us/azure/storage/blobs/static-website-content-delivery-network)
+
+### OIDC
+```powershell
+# create Azure AD
+
+# create managed identity
+```
+
+#### Resources
+- [Use GitHub Actions to connect to Azure](https://docs.microsoft.com/en-us/azure/developer/github/connect-from-azure)
 
 ## AWS S3 Hosting
 - Use the following user guide to setup a simple s3 bucket to host a static website
