@@ -7,11 +7,11 @@ A static website about Stan the Snakes's adventures created using Python's MkDoc
   - [ ] Adventure at Amazon
   - [ ] Adventure at Microsoft
 - [ ] Add hosting info about 
-  - [ ] AWS
-  - [ ] Azure
+  - [x] AWS
+  - [x] Azure
   - [ ] GitHub Pages
-- [ ] AWS diagram
-- [ ] Add other ways to deploy to AWS links
+- [x] AWS diagram
+- [x] Add other ways to deploy to AWS links
 
 ## Getting Started
 
