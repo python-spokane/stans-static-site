@@ -99,4 +99,6 @@ Resource
   - Create a Web Identity IAM role and associate the trust policy created in the previous step
 - Grant the role or user created above permissions on the s3 bucket via a bucket policy (you really only want public *read* access)
   - Use the [AWS Policy Generator](https://awspolicygen.s3.amazonaws.com/policygen.html) to quickly create a secure policy
-#### For more indepth Python + AWS see [Python on AWS](https://aws.amazon.com/developer/language/python/) *Stan approved*
+### Troubleshooting
+- [Access denied error when using s3 static website](https://aws.amazon.com/premiumsupport/knowledge-center/s3-static-website-endpoint-error/)
+#### For more indepth Python + AWS see [Python on AWS](https://aws.amazon.com/developer/language/python/) - *Stan approved*
