@@ -11,7 +11,7 @@ A static website about Stan the Snakes's adventures created using Python's MkDoc
 - [Azure](#azure)
   - [Azure blob storage static website](#azure-blob-storage-static-website)
     - [Resources](#resources)
-  - [OIDC](#oidc)
+  - [Azure Static Web App](#azure-static-web-app)
     - [Resources](#resources-1)
 - [AWS S3 Hosting](#aws-s3-hosting)
   - [Troubleshooting](#troubleshooting)
@@ -103,15 +103,22 @@ az storage account update -g spug --name stansstaticstorage --custom-domain "blo
 - [Map a custom domain to an Azure Blob Storage endpoint](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?tabs=azure-cli#map-a-custom-domain-with-https-enabled)
 - [Integrate a static website with Azure CDN](https://docs.microsoft.com/en-us/azure/storage/blobs/static-website-content-delivery-network)
 
-### OIDC
-```powershell
-# create Azure AD
+### Azure Static Web App
 
-# create managed identity
+```powershell
+# create static web app from git repo
+az staticwebapp create --resource-group spug --source https://github.com/python-spokane/stans-static-site --branch main --location westus2 --name stans-static-site
+
+# query hostname
+az staticwebapp show --name stansstaticsite --query "@.defaultHostname"
+
+# set custom domain
+az staticwebapp hostname set --name stansstaticsite --hostname "hello.stansadventures.com" --no-wait
 ```
 
 #### Resources
-- [Use GitHub Actions to connect to Azure](https://docs.microsoft.com/en-us/azure/developer/github/connect-from-azure)
+- [VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps)
+- [Quickstart: Building your first static site with Azure Static Web Apps](https://docs.microsoft.com/en-us/azure/static-web-apps/getting-started?tabs=vanilla-javascript)
 
 ## AWS S3 Hosting
 - Use the following user guide to setup a simple s3 bucket to host a static website
