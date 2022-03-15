@@ -5,7 +5,7 @@ on:
       - main
     paths-ignore:
       - 'workflows/aws-static-site.yml'
-      - 'azure-static-web-apps**.yml'
+      - 'workflows/azure-static-web-apps**.yml'
 
 permissions:
       id-token: write
