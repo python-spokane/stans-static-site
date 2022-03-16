@@ -1,7 +1,6 @@
 # Stan's Static Site <!-- omit in toc -->
 A static website about Stan the Snakes's adventures created using Python's MkDocs
 
-- [TODO](#todo)
 - [Getting Started](#getting-started)
   - [Create virtual environment](#create-virtual-environment)
   - [Activate virtual environment](#activate-virtual-environment)
