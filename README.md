@@ -1,7 +1,6 @@
 # Stan's Static Site <!-- omit in toc -->
 A static website about Stan the Snakes's adventures created using Python's MkDocs
 
-- [TODO](#todo)
 - [Getting Started](#getting-started)
   - [Create virtual environment](#create-virtual-environment)
   - [Activate virtual environment](#activate-virtual-environment)
@@ -16,18 +15,6 @@ A static website about Stan the Snakes's adventures created using Python's MkDoc
 - [AWS S3 Hosting](#aws-s3-hosting)
   - [Troubleshooting](#troubleshooting)
     - [For more indepth Python + AWS see Python on AWS - *Stan approved*](#for-more-indepth-python--aws-see-python-on-aws---stan-approved)
-
-## TODO
-- [x] Add MkDocs site
-- [ ] Write blog posts for
-  - [ ] Adventure at Amazon
-  - [ ] Adventure at Microsoft
-- [ ] Add hosting info about 
-  - [x] AWS
-  - [x] Azure
-  - [ ] GitHub Pages
-- [x] AWS diagram
-- [x] Add other ways to deploy to AWS links
 
 ## Getting Started
 
