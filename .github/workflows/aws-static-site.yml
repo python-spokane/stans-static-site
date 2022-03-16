@@ -58,7 +58,7 @@ jobs:
       uses: aws-actions/configure-aws-credentials@v1
       with:
         role-to-assume: arn:aws:iam::455510953482:role/stans-static-site-web-id
-        aws-region: us-west-2
+        aws-region: us-east-1
 
     - name: Copy files to the production website with the AWS CLI s3 sync command
       run: |
